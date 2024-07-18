@@ -19,17 +19,11 @@ export default function Home() {
               width="auto"
               alt="Durand Cup 2024 Logo"
             />
-            <Image
-              src={govt}
-              height={80}
-              width={80}
-              alt="Government of Meghalaya"
-              className="py-5"
-            />
           </div>
           <div><Link href="/book" className="bg-black text-white px-3 py-2 rounded-full">BOOK NOW</Link></div>
         </div>
         <hr className="border-b border-black" />
+        <div className="w-screen py-2 text-center bg-black text-white"><p className="animate-blink">Presale tickets are live!</p></div>
         <div className="relative text-white">
           {/* <Image
             src={hero_image}

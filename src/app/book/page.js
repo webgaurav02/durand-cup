@@ -16,13 +16,6 @@ export default function Home() {
                         width="auto"
                         alt="Durand Cup 2024 Logo"
                     />
-                    <Image
-                        src={govt}
-                        height={80}
-                        width={80}
-                        alt="Government of Meghalaya"
-                        className="py-5"
-                    />
                 </div>
             </div>
             <hr className="border-b border-black" />
