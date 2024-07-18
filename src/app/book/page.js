@@ -3,17 +3,27 @@ import Link from "next/link";
 
 //Assets
 import durand_logo from "../../../public/durand_logo.png"
+import govt from "../../../public/Seal_of_Meghalaya.svg"
 
 export default function Home() {
   return (
     <div className="min-h-[100svh] bg-white bg-opacity-70 pb-10">
       <div className="w-screen flex flex-row justify-start px-10 items-center bg-white">
-        <Image
-          src={durand_logo}
-          height={100}
-          width="auto"
-          alt="Durand Cup 2024 Logo"
-        />
+      <div className="flex flex-row gap-2">
+            <Image
+              src={durand_logo}
+              height={100}
+              width="auto"
+              alt="Durand Cup 2024 Logo"
+            />
+            <Image
+              src={govt}
+              height={80}
+              width={80}
+              alt="Government of Meghalaya"
+              className="py-5"
+            />
+          </div>
       </div>
       <hr className="border-b border-black" />
       <div className="relative text-black px-10 py-10">
