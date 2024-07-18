@@ -5,6 +5,7 @@ import Link from "next/link";
 import durand_logo from "../../public/durand_logo.png"
 import hero_image from "../../public/hero_image.png"
 import govt from "../../public/Seal_of_Meghalaya.svg"
+import logo from "../../public/durand_hero_logo.png"
 
 export default function Home() {
   return (
@@ -37,16 +38,25 @@ export default function Home() {
             sizes="100vw"
             className="h-[calc(100svh-105px)] w-auto object-cover absolute right-0 -z-10"
           /> */}
-          <video className="w-full h-[90vh] object-cover" autoPlay muted loop playsInline>
+          <video className="w-full lg:h-[90vh] h-[100svh] object-cover" autoPlay muted loop playsInline>
             <source src="/video.mp4" type="video/mp4" />
             Your browser does not support videos.
           </video>
-          <div className="lg:px-20 px-10 py-20 absolute inset-0 flex flex-col items-start justify-center z-10 bg-black bg-opacity-75 rounded w-full h-full">
-            <h1 className="lg:text-9xl text-6xl font-bold">DURAND</h1>
-            <h1 className="lg:text-9xl text-6xl font-bold">CUP 2024</h1>
-            <h2 className="lg:text-5xl text-3xl font-medium lg:ml-2 ml-1">MEGHALAYA</h2>
-            <div className="mt-10">
-              <Link href="/book" className="bg-white text-black font-bold lg:text-3xl px-10 py-3 rounded-full">BOOK TICKETS ONLINE</Link>
+          <div className="lg:px-20 px-10 py-20 pt-10 absolute inset-0 flex lg:flex-row-reverse lg:items-center flex-col items-start justify-center z-10 bg-black bg-opacity-65 w-full h-full">
+            <Image 
+              src={logo}
+              height={400}
+              width='auto'
+              alt="Durand Cup logo"
+              className="lg:mx-0 mx-auto"
+            />
+            <div className="">
+              <h1 className="lg:text-9xl text-6xl font-bold">DURAND</h1>
+              <h1 className="lg:text-9xl text-6xl font-bold">CUP 2024</h1>
+              <h2 className="lg:text-5xl text-3xl font-medium lg:ml-2 ml-1">MEGHALAYA</h2>
+              <div className="mt-10">
+                <Link href="/book" className="bg-white text-black font-bold lg:text-3xl px-10 py-3 rounded-full">BOOK TICKETS ONLINE</Link>
+              </div>
             </div>
           </div>
         </div>
