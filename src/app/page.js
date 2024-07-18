@@ -43,7 +43,7 @@ export default function Home() {
             Your browser does not support videos.
           </video>
           <div className="lg:px-20 px-10 py-20 pt-10 absolute inset-0 flex lg:flex-row-reverse lg:items-center flex-col items-start justify-center z-10 bg-black bg-opacity-65 w-full h-full">
-            <Image 
+            <Image
               src={logo}
               height={400}
               width='auto'
