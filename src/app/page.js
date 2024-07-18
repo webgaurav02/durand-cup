@@ -20,10 +20,10 @@ export default function Home() {
               alt="Durand Cup 2024 Logo"
             />
           </div>
-          <div><Link href="/book" className="bg-black text-white px-3 py-2 rounded-full">BOOK NOW</Link></div>
+          <div><Link href="/book" className="bg-black text-white px-5 py-2 rounded-full">BOOK NOW</Link></div>
         </div>
         <hr className="border-b border-black" />
-        <div className="w-screen py-2 text-center bg-black text-white"><p className="animate-blink">Presale tickets are live!</p></div>
+        <div className="w-screen py-2 text-center bg-black text-white"><p className="animate-blink">Phase 1 tickets are live!</p></div>
         <div className="relative text-white">
           {/* <Image
             src={hero_image}
